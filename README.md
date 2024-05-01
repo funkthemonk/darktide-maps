@@ -25,7 +25,9 @@ There is now a {mission id}_size.json file for each mission with the format:
 ```
 {
  "size": "800,400", -- the size in world units of the map
- "offset": "-300,-200" -- the offset in world units that was applied to get the top most and left most vertices to be at the top and left edge of the image
+ "offset": "-300,-200" -- the offset in world units that was applied to get the bottom most and left most
+ -- vertices to be at the bottom and left edge of the image
+ -- maybe.. I dunno, the y axis got flipped around at some point
 }
 ```
 
