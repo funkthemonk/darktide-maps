@@ -16,10 +16,18 @@ The json format is simply:
 
 note: since it comes from lua, indexes are 1 based
 
-PNGs are scaled so that their longest dimension (w/h) is 4k pixels, meaning they aren't at the same scale.
-I might upload scaled versions if requested
+The PNGs without a suffix are scaled so that their longest dimension (w/h) is 4k pixels, meaning they aren't at the same scale.
+The PNGS ending with _x1, _x5 are scaled by that amount. x1 is 1:1, 1 darktide game world unit (1 meter) to 1 godot 2d unit.
 
-note, the pngs are white with alpha background, so you won't see anything on a white background (like github)
+note: the pngs are white with alpha background, so you won't see anything on a white background (like previewing on github)
+
+There is now a {mission id}_size.json file for each mission with the format:
+```
+{
+ "size": "800,400", -- the size in world units of the map
+ "offset": "-300,-200" -- the offset in world units that was applied to get the top most and left most vertices to be at the top and left edge of the image
+}
+```
 
 Mission ids to display names:
 ```
