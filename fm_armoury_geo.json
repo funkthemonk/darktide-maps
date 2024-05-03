@@ -1,0 +1,12 @@
+{
+	"geometry": {
+		"coordinates": [
+			[]
+		],
+		"type": "MultiPolygon"
+	},
+	"properties": {
+		"name": "fm_resurgence"
+	},
+	"type": "Feature"
+}
